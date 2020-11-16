@@ -1,0 +1,139 @@
+/* General Settings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+body {
+  background-color: rgb(25, 162, 174);
+  overflow: hidden;
+}
+
+/* Typography and Color */
+.profile-status > div > span:nth-child(1) {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.profile-status > div > span:nth-child(2) {
+  font-weight: 400;
+  font-size: 75%;
+  color: hsl(0, 0%, 59%);
+}
+.profile-details > h3 {
+  text-align: center;
+  margin: 25px 0 0 0;
+} 
+.profile-details > h4 {
+  color:  hsl(227, 10%, 46%);
+  text-align: center;
+  font-weight: 400;
+  margin: 15px 30px 30px;
+} 
+.profile-details > h3 > span {
+  display: inline-block;
+  margin-left: 5px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+.bg-top {
+  top: -30%;
+  left: -100%;
+  background: url('./images/bg-pattern-top.svg');
+}
+.bg-bottom {
+  bottom: -30%;
+  right: -100%;
+  background: url('./images/bg-pattern-bottom.svg');
+}
+.background {
+  position: absolute;
+  height: 80%;
+  min-width: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.profile-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.bg-banner {
+  background: url('./images/bg-pattern-card.svg');
+  height: 140px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-card {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 15px;
+  min-width: 330px;
+}
+.profile-details {
+  padding: 3rem 0 0 0;  
+}
+.profile-details > img {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -105%);
+}
+.profile-status {
+  display: flex;
+  padding: 30px 20px 20px;
+  border-top: 0.1px solid hsl(0, 0%, 59%, 0.35);
+}
+.profile-status > div {
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .profile-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    min-width: 420px;
+  }
+  .bg-top {
+    top: -50%;
+    left: 0;
+    background: url('./images/bg-pattern-top.svg');
+  }
+  .bg-bottom {
+    bottom: -50%;
+    right: -5%;
+    background: url('./images/bg-pattern-bottom.svg');
+  }
+  .background {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+}
