@@ -110,7 +110,19 @@ body {
   align-items: center;
 }
 
+.attribution {
+  font-size: 11px!important;
+  text-align: center; 
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%); 
 
+}
 @media only screen and (min-width: 1440px) {
   .profile-card {
     position: relative;
